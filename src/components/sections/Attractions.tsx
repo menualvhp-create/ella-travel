@@ -57,9 +57,9 @@ const attractions = [
     category: "Waterfall",
   },
   {
-    title: "Nildiya Pokuna",
+    title: "Blue Water Pond",
     description: "A mystical natural rock pool nestled deep within an ancient forest, shrouded in legends and breathtaking natural beauty.",
-    image: IMAGES.nildiyaPokuna,
+    image: IMAGES.blueWaterPond,
     rating: 4.7,
     category: "Nature",
   },
