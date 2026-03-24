@@ -13,7 +13,7 @@ export default function About() {
         <AnimateIn direction="right">
           <div className="relative">
             <div className="relative h-[600px] w-full rounded-3xl overflow-hidden shadow-2xl z-20">
-              <Image 
+              <Image
                 src={IMAGES.aboutGuide.src}
                 alt={IMAGES.aboutGuide.alt}
                 fill
@@ -23,8 +23,8 @@ export default function About() {
             {/* Aesthetic Background Elements */}
             <div className="absolute -top-10 -left-10 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -z-10" />
             <div className="absolute -bottom-10 -right-10 w-80 h-80 bg-primary/10 rounded-full blur-3xl -z-10" />
-            
-            <motion.div 
+
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               className="absolute -bottom-10 right-10 glass p-8 rounded-2xl shadow-2xl z-30 max-w-xs"
@@ -50,13 +50,13 @@ export default function About() {
             Meet Your Guide
           </span>
           <h2 className="luxury-heading text-4xl md:text-6xl font-bold mb-8">
-            Redefining the <br /> 
+            Redefining the <br />
             <span className="text-primary font-serif italic">Tuk-Tuk Adventure</span>
           </h2>
           <p className="text-foreground/70 text-lg mb-10 leading-relaxed">
-            Forget everything you know about traditional tours. We offer a premium, 
-            luxurious approach to exploring the mountains of Sri Lanka. From hidden 
-            waterfalls to private sunrise breakfasts, every detail is crafted for 
+            Forget everything you know about traditional tours. We offer a premium,
+            luxurious approach to exploring the mountains of Sri Lanka. From hidden
+            waterfalls to private sunrise breakfasts, every detail is crafted for
             the sophisticated traveler.
           </p>
 

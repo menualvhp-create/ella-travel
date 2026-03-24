@@ -28,6 +28,55 @@ const attractions = [
     rating: 4.7,
     category: "Waterfall",
   },
+  {
+    title: "Ella Rock",
+    description: "A challenging yet rewarding hike through tea estates and dense forests, culminating in stunning 360° views of the surrounding valleys.",
+    image: IMAGES.ellaRock,
+    rating: 4.9,
+    category: "Hiking",
+  },
+  {
+    title: "Demodara Railway Loop",
+    description: "An engineering masterpiece where the train spirals under itself — one of the most unique railway loops in the world.",
+    image: IMAGES.demodaraLoop,
+    rating: 4.8,
+    category: "Architecture",
+  },
+  {
+    title: "Kuda Ravana Ella Waterfall",
+    description: "A hidden gem tucked in the jungle — a serene, lesser-known cascade perfect for a tranquil escape from the crowds.",
+    image: IMAGES.kudaRavana,
+    rating: 4.6,
+    category: "Waterfall",
+  },
+  {
+    title: "Diyaluma Falls",
+    description: "Sri Lanka's second highest waterfall, cascading 220 metres over dramatic rock ledges into natural pools below.",
+    image: IMAGES.diyaluma,
+    rating: 4.8,
+    category: "Waterfall",
+  },
+  {
+    title: "Nildiya Pokuna",
+    description: "A mystical natural rock pool nestled deep within an ancient forest, shrouded in legends and breathtaking natural beauty.",
+    image: IMAGES.nildiyaPokuna,
+    rating: 4.7,
+    category: "Nature",
+  },
+  {
+    title: "Baker's Bend",
+    description: "A scenic bend on the iconic Ella–Badulla highway offering sweeping panoramic views of the misty valley below.",
+    image: IMAGES.bakersBend,
+    rating: 4.6,
+    category: "Viewpoint",
+  },
+  {
+    title: "Lipton's Seat",
+    description: "Sir Thomas Lipton's favourite viewpoint — a majestic hilltop overlooking endless rolling tea estates stretching to the horizon.",
+    image: IMAGES.liptonsSeat,
+    rating: 4.9,
+    category: "Viewpoint",
+  },
 ];
 
 export default function Attractions() {
@@ -58,7 +107,7 @@ export default function Attractions() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {attractions.map((item, i) => (
-            <AnimateIn key={item.title} delay={i * 0.2}>
+            <AnimateIn key={item.title} delay={(i % 3) * 0.15}>
               <motion.div 
                 whileHover={{ y: -10 }}
                 className="group relative bg-white dark:bg-zinc-900 rounded-3xl overflow-hidden shadow-2xl transition-all duration-500"
