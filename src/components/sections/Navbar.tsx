@@ -44,8 +44,10 @@ export default function Navbar() {
     <>
       <nav
         className={cn(
-          "fixed top-0 left-0 right-0 z-50 transition-all duration-500 px-6 py-6 md:py-8",
-          isScrolled ? "glass shadow-xl py-4 md:py-4" : "bg-transparent"
+          "fixed top-0 left-0 right-0 z-50 transition-all duration-500 px-6 border-b",
+          isScrolled 
+            ? "bg-[#0a1a12]/95 backdrop-blur-xl shadow-2xl py-5 md:py-6 border-white/10" 
+            : "bg-[#0a1a12]/40 backdrop-blur-md py-8 md:py-10 border-white/10"
         )}
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between">
@@ -56,20 +58,20 @@ export default function Navbar() {
               animate={{ opacity: 1, x: 0 }}
               className="flex items-center gap-3 cursor-pointer"
             >
-              <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center shadow-lg">
-                <Landmark className="text-primary w-6 h-6" />
+              <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center shadow-lg">
+                <Landmark className="text-primary w-8 h-8" />
               </div>
               <div>
-                <span className="luxury-heading text-lg font-bold tracking-tight text-white drop-shadow-lg block leading-none">
+                <span className="luxury-heading text-3xl font-bold tracking-tight text-white drop-shadow-lg block leading-none">
                   ELLA TRAVEL
                 </span>
-                <span className="text-secondary text-[9px] uppercase tracking-[0.3em] block">Sri Lanka</span>
+                <span className="text-secondary text-[11px] uppercase tracking-[0.3em] block mt-1">Sri Lanka</span>
               </div>
             </motion.div>
           </Link>
 
           {/* Desktop Links */}
-          <div className="hidden md:flex items-center gap-10 lg:gap-12">
+          <div className="hidden md:flex items-center gap-12 lg:gap-14">
             {navLinks.map((link, i) => (
               <motion.div
                 key={link.name}
@@ -79,7 +81,7 @@ export default function Navbar() {
               >
                 <Link
                   href={link.href}
-                  className="text-xs uppercase tracking-widest font-semibold text-white/90 hover:text-secondary transition-colors duration-300 relative group"
+                  className="text-sm uppercase tracking-widest font-semibold text-white/90 hover:text-secondary transition-colors duration-300 relative group py-2"
                 >
                   {link.name}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary group-hover:w-full transition-all duration-300" />
@@ -90,9 +92,9 @@ export default function Navbar() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               onClick={handleBookNow}
-              className="bg-secondary text-primary px-8 py-3 rounded-full text-xs uppercase tracking-widest font-bold shadow-lg hover:shadow-secondary/30 hover:scale-105 transition-all duration-300 flex items-center gap-2"
+              className="bg-secondary text-primary px-10 py-5 rounded-full text-sm uppercase tracking-widest font-bold shadow-lg hover:shadow-secondary/30 hover:scale-105 transition-all duration-300 flex items-center gap-3 ml-2"
             >
-              <Calendar className="w-3.5 h-3.5" />
+              <Calendar className="w-5 h-5" />
               Book Now
             </motion.button>
           </div>
@@ -106,11 +108,11 @@ export default function Navbar() {
             <AnimatePresence mode="wait">
               {mobileMenuOpen ? (
                 <motion.div key="close" initial={{ rotate: -90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: 90, opacity: 0 }} transition={{ duration: 0.2 }}>
-                  <X className="w-6 h-6" />
+                  <X className="w-8 h-8" />
                 </motion.div>
               ) : (
                 <motion.div key="open" initial={{ rotate: 90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: -90, opacity: 0 }} transition={{ duration: 0.2 }}>
-                  <Menu className="w-6 h-6" />
+                  <Menu className="w-8 h-8" />
                 </motion.div>
               )}
             </AnimatePresence>
