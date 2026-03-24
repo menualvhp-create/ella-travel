@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Calendar, Users, MapPin, ChevronRight, CheckCircle2, Star } from "lucide-react";
 
@@ -89,7 +89,7 @@ export default function BookingDialog({ onClose }: { onClose?: () => void }) {
                   <CheckCircle2 className="w-10 h-10 text-secondary" />
                 </div>
                 <h3 className="luxury-heading text-3xl font-bold mb-3">Booking Confirmed!</h3>
-                <p className="text-foreground/60 mb-8">Thank you, <strong>{form.name}</strong>. We've received your booking and will send a confirmation to <strong>{form.email}</strong> within 30 minutes.</p>
+                <p className="text-foreground/60 mb-8">Thank you, <strong>{form.name}</strong>. We&apos;ve received your booking and will send a confirmation to <strong>{form.email}</strong> within 30 minutes.</p>
                 <div className="bg-accent/40 rounded-2xl p-6 text-left mb-6">
                   <h4 className="font-bold mb-4 text-sm uppercase tracking-widest text-foreground/40">Booking Summary</h4>
                   <div className="space-y-2 text-sm">

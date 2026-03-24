@@ -9,25 +9,25 @@ const contactMethods = [
   {
     icon: Phone,
     label: "Call Us",
-    value: "+94 123 456 789",
+    value: "+94 720 435 282 ",
     sub: "Mon–Sun, 6am – 8pm",
-    href: "tel:+94123456789",
+    href: "tel:+94720435282",
     color: "from-emerald-500/20 to-emerald-500/5",
   },
   {
     icon: Mail,
     label: "Email Us",
-    value: "hello@ellatravel.luxury",
+    value: "menualvhp@gmail.com",
     sub: "We reply within 2 hours",
-    href: "mailto:hello@ellatravel.luxury",
+    href: "menualvhp@gmail.com",
     color: "from-amber-500/20 to-amber-500/5",
   },
   {
     icon: MessageSquare,
     label: "WhatsApp",
-    value: "+94 987 654 321",
+    value: "+94 740 954 693",
     sub: "Instant messaging support",
-    href: "https://wa.me/94987654321",
+    href: "https://wa.me/94740954693",
     color: "from-green-500/20 to-green-500/5",
   },
   {
@@ -66,7 +66,7 @@ export default function Contact() {
             Plan Your <span className="text-secondary italic">Dream Trip</span>
           </h2>
           <p className="text-white/60 max-w-xl mx-auto leading-relaxed">
-            Reach out via your preferred channel or fill out the inquiry form — we'll craft a bespoke itinerary within hours.
+            Reach out via your preferred channel or fill out the inquiry form — we&apos;ll craft a bespoke itinerary within hours.
           </p>
         </AnimateIn>
 
@@ -100,7 +100,7 @@ export default function Contact() {
                 <div>
                   <h3 className="text-white luxury-heading text-3xl font-bold mb-4">Send an Inquiry</h3>
                   <p className="text-white/50 text-sm leading-relaxed mb-8">
-                    Tell us about your dream escape and we'll put together a fully personalized luxury itinerary just for you.
+                    Tell us about your dream escape and we&apos;ll put together a fully personalized luxury itinerary just for you.
                   </p>
                 </div>
                 <div className="rounded-2xl overflow-hidden h-56 border border-white/10">
@@ -127,7 +127,7 @@ export default function Contact() {
                   >
                     <CheckCircle2 className="w-16 h-16 text-secondary" />
                     <h4 className="text-white luxury-heading text-3xl font-bold">Inquiry Sent!</h4>
-                    <p className="text-white/60">We'll get back to you within 2 hours with your personalized itinerary.</p>
+                    <p className="text-white/60">We&apos;ll get back to you within 2 hours with your personalized itinerary.</p>
                   </motion.div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-5">
@@ -174,7 +174,7 @@ export default function Contact() {
                           onChange={e => setFormData({ ...formData, guests: e.target.value })}
                           className="w-full bg-white/5 border border-white/10 focus:border-secondary/60 rounded-2xl py-4 px-5 text-white outline-none transition-all text-sm"
                         >
-                          {[1,2,3,4,5,6].map(n => <option key={n} value={n} className="bg-[#1B4332]">{n} {n === 1 ? "Guest" : "Guests"}</option>)}
+                          {[1, 2, 3, 4, 5, 6].map(n => <option key={n} value={n} className="bg-[#1B4332]">{n} {n === 1 ? "Guest" : "Guests"}</option>)}
                         </select>
                       </div>
                     </div>

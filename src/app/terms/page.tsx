@@ -16,7 +16,7 @@ export default function TermsPage() {
           <div className="prose prose-lg dark:prose-invert max-w-none space-y-8 text-foreground/80">
             <section>
               <h2 className="luxury-heading text-2xl font-bold text-foreground mb-4">1. Acceptance of Terms</h2>
-              <p className="leading-relaxed">By accessing or using Ella Travel's services, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.</p>
+              <p className="leading-relaxed">By accessing or using Ella Travel&apos;s services, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.</p>
             </section>
 
             <section>

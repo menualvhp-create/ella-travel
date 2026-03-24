@@ -181,7 +181,7 @@ export default function Reviews() {
                 </div>
 
                 <StarRating value={review.rating} />
-                <p className="text-foreground/70 text-sm mt-4 mb-5 italic leading-relaxed flex-1">"{review.text}"</p>
+                <p className="text-foreground/70 text-sm mt-4 mb-5 italic leading-relaxed flex-1">&quot;{review.text}&quot;</p>
 
                 <div className="flex items-center justify-between pt-4 border-t border-foreground/10">
                   <span className="text-[10px] uppercase tracking-widest text-secondary font-bold">{review.tourType}</span>

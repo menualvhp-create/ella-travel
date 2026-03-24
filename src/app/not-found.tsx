@@ -18,7 +18,7 @@ export default function NotFound() {
           </div>
           <h1 className="luxury-heading text-5xl md:text-6xl font-bold text-white mb-4">Lost in the Mist</h1>
           <p className="text-white/60 text-lg mb-10 leading-relaxed">
-            Like the morning mist over Ella's mountains, this page seems to have disappeared. Let us guide you back to safety.
+            Like the morning mist over Ella&apos;s mountains, this page seems to have disappeared. Let us guide you back to safety.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/" className="flex items-center gap-2 justify-center bg-secondary text-primary px-8 py-4 rounded-full font-bold uppercase tracking-widest text-sm hover:shadow-xl hover:shadow-secondary/30 transition-all hover:scale-105">

@@ -39,7 +39,7 @@ export default function About() {
                 </div>
               </div>
               <p className="text-sm italic">
-                "Our mission is to provide a billion-dollar service to every traveler, showing the true heart of Ella."
+                &quot;Our mission is to provide a billion-dollar service to every traveler, showing the true heart of Ella.&quot;
               </p>
             </motion.div>
           </div>
