@@ -9,9 +9,7 @@ import {
   LogOut, 
   Plus, 
   Trash2, 
-  Edit,
-  CheckCircle,
-  Clock
+  Edit
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -71,7 +69,7 @@ export default function AdminPage() {
         <header className="flex justify-between items-center mb-10">
           <div>
             <h1 className="luxury-heading text-3xl font-bold">Welcome Back, Guide</h1>
-            <p className="text-zinc-500">Here's what's happening with your travels today.</p>
+            <p className="text-zinc-500">Here&apos;s what&apos;s happening with your travels today.</p>
           </div>
           <button className="bg-primary text-white px-6 py-2 rounded-xl text-sm font-bold flex items-center gap-2 shadow-lg hover:bg-secondary hover:text-primary transition-all">
             <Plus className="w-4 h-4" /> New Attraction

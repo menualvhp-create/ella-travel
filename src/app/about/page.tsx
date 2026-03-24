@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Navbar from "@/components/sections/Navbar";
 import Footer from "@/components/sections/Footer";
 import AnimateIn from "@/components/ui/AnimateIn";
@@ -46,7 +47,7 @@ export default function AboutPage() {
                 To Share The Magic of Ella with Every Traveler
               </h2>
               <p className="text-white/70 text-lg leading-relaxed">
-                Ella Travel was founded on a simple belief: that the most beautiful places in the world deserve to be experienced properly — with intention, with expertise, and with the kind of personal touch that only comes from someone who truly loves a place. Our tuk-tuk guides aren't just drivers. They're storytellers, photographers, and friends.
+                Ella Travel was founded on a simple belief: that the most beautiful places in the world deserve to be experienced properly — with intention, with expertise, and with the kind of personal touch that only comes from someone who truly loves a place. Our tuk-tuk guides aren&apos;t just drivers. They&apos;re storytellers, photographers, and friends.
               </p>
             </AnimateIn>
           </div>
@@ -126,10 +127,10 @@ export default function AboutPage() {
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-6 h-6 fill-secondary text-secondary" />)}
               </div>
               <h2 className="luxury-heading text-4xl md:text-5xl font-bold text-white mb-6">Ready to Experience Ella?</h2>
-              <p className="text-white/60 mb-10">Join thousands of travelers who've made Ella their most unforgettable journey.</p>
-              <a href="/#contact" className="inline-block bg-secondary text-primary px-10 py-4 rounded-full font-bold uppercase tracking-widest text-sm hover:shadow-xl hover:shadow-secondary/20 transition-all">
+              <p className="text-white/60 mb-10">Join thousands of travelers who&apos;ve made Ella their most unforgettable journey.</p>
+              <Link href="/#contact" className="inline-block bg-secondary text-primary px-10 py-4 rounded-full font-bold uppercase tracking-widest text-sm hover:shadow-xl hover:shadow-secondary/20 transition-all">
                 Book Your Adventure
-              </a>
+              </Link>
             </AnimateIn>
           </div>
         </section>

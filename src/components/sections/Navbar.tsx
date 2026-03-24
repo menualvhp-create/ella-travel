@@ -44,8 +44,8 @@ export default function Navbar() {
     <>
       <nav
         className={cn(
-          "fixed top-0 left-0 right-0 z-50 transition-all duration-500 px-6 py-4",
-          isScrolled ? "glass shadow-xl py-3" : "bg-transparent"
+          "fixed top-0 left-0 right-0 z-50 transition-all duration-500 px-6 py-6 md:py-8",
+          isScrolled ? "glass shadow-xl py-4 md:py-4" : "bg-transparent"
         )}
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between">
@@ -56,8 +56,8 @@ export default function Navbar() {
               animate={{ opacity: 1, x: 0 }}
               className="flex items-center gap-3 cursor-pointer"
             >
-              <div className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center shadow-lg">
-                <Landmark className="text-primary w-5 h-5" />
+              <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center shadow-lg">
+                <Landmark className="text-primary w-6 h-6" />
               </div>
               <div>
                 <span className="luxury-heading text-lg font-bold tracking-tight text-white drop-shadow-lg block leading-none">
@@ -69,7 +69,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Links */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-10 lg:gap-12">
             {navLinks.map((link, i) => (
               <motion.div
                 key={link.name}
@@ -90,7 +90,7 @@ export default function Navbar() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               onClick={handleBookNow}
-              className="bg-secondary text-primary px-6 py-2.5 rounded-full text-xs uppercase tracking-widest font-bold shadow-lg hover:shadow-secondary/30 hover:scale-105 transition-all duration-300 flex items-center gap-2"
+              className="bg-secondary text-primary px-8 py-3 rounded-full text-xs uppercase tracking-widest font-bold shadow-lg hover:shadow-secondary/30 hover:scale-105 transition-all duration-300 flex items-center gap-2"
             >
               <Calendar className="w-3.5 h-3.5" />
               Book Now
